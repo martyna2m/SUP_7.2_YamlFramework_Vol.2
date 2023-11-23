@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="Init commit">
+    <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="Correct BrowserConfigClass">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/WebPageTitleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/WebPageTitleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,11 +81,20 @@
       <option name="project" value="LOCAL" />
       <updated>1700734292073</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Correct BrowserConfigClass">
+      <option name="closed" value="true" />
+      <created>1700735008494</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700735008494</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="Correct BrowserConfigClass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct BrowserConfigClass" />
   </component>
 </project>

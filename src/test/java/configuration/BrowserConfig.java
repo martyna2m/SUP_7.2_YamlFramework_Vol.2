@@ -16,22 +16,30 @@ import org.slf4j.LoggerFactory;
 import java.util.Map;
 
 public class BrowserConfig {
-    static YamlReader yamlReader = new YamlReader("src/test/resources/config.yaml");
-    private WebDriver driver;
+
     private static Browser activeBrowser;
+    private WebDriver driver;
+    private int browserImplicitTimeOut = 10;
+    static YamlReader yamlReader = new YamlReader("src/test/resources/config.yaml");
     static Map<String, Object> properties = yamlReader.readYamlFile();
     static Logger log = LoggerFactory.getLogger(testbase.TestBase.class);
 
 
     public BrowserConfig() {
         setActiveBrowser(properties);
+        initBrowserSettings();
+    }
+
+
+    private void initBrowserSettings() {
+        this.browserImplicitTimeOut = System.getProperty("browserImplicitTimeOut") != null ? Integer.parseInt(System.getProperty("browserImplicitTimeOut")) : this.browserImplicitTimeOut;
     }
 
 
     public static Browser setActiveBrowser(Map<String, Object> data) {
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
         Map<String, Object> browsers = (Map<String, Object>) data.get("browser");
-         activeBrowser = null;
+        activeBrowser = null;
 
         for (Map.Entry<String, Object> entry : browsers.entrySet()) {
             Map<String, Object> browserProperties = (Map<String, Object>) entry.getValue();
