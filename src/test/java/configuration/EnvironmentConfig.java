@@ -46,6 +46,9 @@ public class EnvironmentConfig {
                 break;
             }
         }
+        if (activeEnvironment == null){
+            System.out.println("Active environment not found. Check configuration file.");
+        }
         return activeEnvironment;
     }
 

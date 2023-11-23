@@ -31,7 +31,7 @@ public class BrowserConfig {
     public static Browser setActiveBrowser(Map<String, Object> data) {
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
         Map<String, Object> browsers = (Map<String, Object>) data.get("browser");
-        Browser activeBrowser = null;
+         activeBrowser = null;
 
         for (Map.Entry<String, Object> entry : browsers.entrySet()) {
             Map<String, Object> browserProperties = (Map<String, Object>) entry.getValue();

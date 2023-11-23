@@ -11,13 +11,13 @@ public class WebPageTitleTest extends TestBase {
     @DisplayName("env test webTitle")
     @Tag("regression")
     void checkWebsiteTitle() {
-        log.info(">>>>Start test>>>>");
+        log.info(">>>>Starting webPageTitle test>>>>");
 
         String actualTitle = driver.getTitle();
         String expectedTitle = System.getProperty("webTitle");
         String appUrl = System.getProperty("appUrl");
 
-        log.info("appUrl{}", appUrl);
+        log.info("AppUrl: {}", appUrl);
         log.info("Actual title: {}", actualTitle);
         log.info("Expected title: {}", expectedTitle);
 

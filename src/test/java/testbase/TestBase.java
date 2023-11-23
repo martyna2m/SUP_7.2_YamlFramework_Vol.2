@@ -10,14 +10,14 @@ import org.slf4j.LoggerFactory;
 
 public class TestBase {
     protected static EnvironmentConfig appConfig;
-    protected static BrowserConfig browserConfig;
+
     protected static WebDriver driver;
     public static Logger log = LoggerFactory.getLogger(testbase.TestBase.class);
 
     @BeforeAll
     static void setUpDriver() {
         appConfig = EnvironmentConfig.getInstance();
-        browserConfig = new BrowserConfig();
+        BrowserConfig browserConfig = new BrowserConfig();
         driver = browserConfig.getDriver();
         log.debug("Driver initialized");
     }

@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configuration/Browser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configuration/Environment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/configuration/YamlReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testbase/TestBase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/webtests/WebPageTitleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/config.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/logback.xml" afterDir="false" />
+    <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="Init commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/webtests/WebPageTitleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/webtests/WebPageTitleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +25,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -88,6 +76,19 @@
       <option name="presentableId" value="Default" />
       <updated>1700639198831</updated>
     </task>
+    <task id="LOCAL-00001" summary="Init commit">
+      <option name="closed" value="true" />
+      <created>1700734292073</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700734292073</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
   </component>
 </project>
