@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="Correct BrowserConfigClass">
+    <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="Change order of methods">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/YamlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/YamlReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,12 +92,30 @@
       <option name="project" value="LOCAL" />
       <updated>1700735008494</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add initBrowserSettings method">
+      <option name="closed" value="true" />
+      <created>1700736056277</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1700736056277</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Change order of methods">
+      <option name="closed" value="true" />
+      <created>1700736103323</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1700736103323</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
     <MESSAGE value="Correct BrowserConfigClass" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correct BrowserConfigClass" />
+    <MESSAGE value="Add initBrowserSettings method" />
+    <MESSAGE value="Change order of methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Change order of methods" />
   </component>
 </project>

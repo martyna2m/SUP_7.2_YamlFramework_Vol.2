@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 import java.util.Map;
 
 public class EnvironmentConfig {
-    static YamlReader yamlReader = new YamlReader("src/test/resources/config.yaml");
+    static YamlReader yamlReader = new YamlReader();
     static Logger log = LoggerFactory.getLogger(testbase.TestBase.class);
     static Map<String, Object> properties = yamlReader.readYamlFile();
 

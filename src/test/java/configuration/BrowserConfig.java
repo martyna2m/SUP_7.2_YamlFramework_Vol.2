@@ -20,7 +20,7 @@ public class BrowserConfig {
     private static Browser activeBrowser;
     private WebDriver driver;
     private int browserImplicitTimeOut = 10;
-    static YamlReader yamlReader = new YamlReader("src/test/resources/config.yaml");
+    static YamlReader yamlReader = new YamlReader();
     static Map<String, Object> properties = yamlReader.readYamlFile();
     static Logger log = LoggerFactory.getLogger(testbase.TestBase.class);
 
