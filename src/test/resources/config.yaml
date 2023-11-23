@@ -1,0 +1,65 @@
+browser:
+
+  chrome:
+    browserName: CHROME
+    active: false
+
+  edge:
+    browserName: EDGE
+    active: true
+
+  firefox:
+    browserName: FIREFOX
+    active: false
+
+
+
+environment:
+
+  dev:
+    active: false
+    envName: DEV
+    appUrl: https://selenium.dev
+    webTitle: Selenium
+    login: devUser1
+    password: devPassword1
+    exchangeMailbox: devUser1@dev.com
+    mailboxPassword: devPassword1
+    browserImplicitTimeOut: 10
+
+
+  int:
+    active: false
+    envName: INT
+    appUrl: https://google.com
+    webTitle: Google
+    login: intUser1
+    password: intPassword1
+    exchangeMailbox: intUser1@int.com
+    mailboxPassword: intPassword1
+    browserImplicitTimeOut: 10
+
+
+  test:
+    active: false
+    envName: TST
+    appUrl: https://google.pl
+    webTitle: Google
+    login: tstUser1
+    password: tstPassword1
+    exchangeMailbox: tstUser1@tst.com
+    mailboxPassword: tstPassword1
+    browserImplicitTimeOut: 15
+
+
+  uat:
+    active: true
+    envName: UAT
+    appUrl: https://sii.pl/en/
+    webTitle: IT, engineering and BPO solutions and services – Sii Poland
+    login: uatUser1
+    password: uatPassword1
+    exchangeMailbox: uatUser1@uat.com
+    mailboxPassword: uatPassword1
+    browserImplicitTimeOut: 15
+
