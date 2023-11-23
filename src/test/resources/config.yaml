@@ -3,11 +3,11 @@ browser:
 
   chrome:
     browserName: CHROME
-    active: false
+    active: true
 
   edge:
     browserName: EDGE
-    active: true
+    active: false
 
   firefox:
     browserName: FIREFOX

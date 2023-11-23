@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="Change order of methods">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/YamlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/YamlReader.java" afterDir="false" />
+    <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="Refactor YamlReader">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -108,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700736103323</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Refactor YamlReader">
+      <option name="closed" value="true" />
+      <created>1700737154545</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1700737154545</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -116,6 +121,7 @@
     <MESSAGE value="Correct BrowserConfigClass" />
     <MESSAGE value="Add initBrowserSettings method" />
     <MESSAGE value="Change order of methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Change order of methods" />
+    <MESSAGE value="Refactor YamlReader" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor YamlReader" />
   </component>
 </project>
