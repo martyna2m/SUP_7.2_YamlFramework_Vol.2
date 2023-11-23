@@ -31,9 +31,6 @@ public class BrowserConfig {
     }
 
 
-    private void initBrowserSettings() {
-        this.browserImplicitTimeOut = System.getProperty("browserImplicitTimeOut") != null ? Integer.parseInt(System.getProperty("browserImplicitTimeOut")) : this.browserImplicitTimeOut;
-    }
 
 
     public static Browser setActiveBrowser(Map<String, Object> data) {
@@ -93,6 +90,11 @@ public class BrowserConfig {
             }
         }
         return this.driver;
+    }
+
+
+    private void initBrowserSettings() {
+        this.browserImplicitTimeOut = System.getProperty("browserImplicitTimeOut") != null ? Integer.parseInt(System.getProperty("browserImplicitTimeOut")) : this.browserImplicitTimeOut;
     }
 
 }
