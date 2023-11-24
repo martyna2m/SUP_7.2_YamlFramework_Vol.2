@@ -10,7 +10,7 @@ import java.util.Map;
 public class EnvironmentConfig {
     static YamlReader yamlReader = new YamlReader();
     static Logger log = LoggerFactory.getLogger(testbase.TestBase.class);
-    static Map<String, Object> properties = yamlReader.readYamlFile();
+    static Map<String, Object> properties = yamlReader.readYamlFile("src/test/resources/config.yaml");
 
 
     public static EnvironmentConfig getInstance() {

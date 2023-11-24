@@ -21,7 +21,7 @@ public class BrowserConfig {
     private WebDriver driver;
     private int browserImplicitTimeOut = 10;
     static YamlReader yamlReader = new YamlReader();
-    static Map<String, Object> properties = yamlReader.readYamlFile();
+    static Map<String, Object> properties = yamlReader.readYamlFile("src/test/resources/config.yaml");
     static Logger log = LoggerFactory.getLogger(testbase.TestBase.class);
 
 

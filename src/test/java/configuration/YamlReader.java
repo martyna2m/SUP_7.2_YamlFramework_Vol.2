@@ -8,11 +8,9 @@ import java.io.IOException;
 import java.util.Map;
 
 public class YamlReader {
-    private final String filePath = "src/test/resources/config.yaml";
 
 
-
-    public Map<String, Object> readYamlFile() {
+    public Map<String, Object> readYamlFile(String filePath) {
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
         Map<String, Object> data = null;
 
