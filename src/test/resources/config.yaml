@@ -1,24 +1,10 @@
 
-browser:
-
-  chrome:
-    browserName: CHROME
-    active: true
-
-  edge:
-    browserName: EDGE
-    active: false
-
-  firefox:
-    browserName: FIREFOX
-    active: false
-
+browser: chrome
 
 
 environment:
-
   dev:
-    active: false
+    active: true
     envName: DEV
     appUrl: https://selenium.dev
     webTitle: Selenium
@@ -54,7 +40,7 @@ environment:
 
 
   uat:
-    active: true
+    active: false
     envName: UAT
     appUrl: https://sii.pl/en/
     webTitle: IT, engineering and BPO solutions and services – Sii Poland

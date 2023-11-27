@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="Refactor POM">
+      <change afterPath="$PROJECT_DIR$/src/test/java/configuration/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/YamlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/YamlReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/Browser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/Environment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,14 +41,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/mmichalska/IdeaProjects/SUP_7.2_YamlFramework - Correction"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="WebPageTitleTest.checkWebsiteTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SUP_Selenium_6.1" />
@@ -134,5 +141,21 @@
     <MESSAGE value="Refactor YamlReader" />
     <MESSAGE value="Refactor POM" />
     <option name="LAST_COMMIT_MESSAGE" value="Refactor POM" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/configuration/AppConfig.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/configuration/AppConfig.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

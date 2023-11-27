@@ -1,7 +1,6 @@
 package testbase;
 
-import configuration.BrowserConfig;
-import configuration.EnvironmentConfig;
+import configuration.AppConfig;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.WebDriver;
@@ -9,16 +8,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class TestBase {
-    protected static EnvironmentConfig appConfig;
-
+    private static AppConfig appConfig;
     protected static WebDriver driver;
     public static Logger log = LoggerFactory.getLogger(testbase.TestBase.class);
 
     @BeforeAll
     static void setUpDriver() {
-        appConfig = EnvironmentConfig.getInstance();
-        BrowserConfig browserConfig = new BrowserConfig();
-        driver = browserConfig.getDriver();
+        appConfig = AppConfig.getInstance();
+        driver = appConfig.getDriver();
         log.debug("Driver initialized");
     }
 

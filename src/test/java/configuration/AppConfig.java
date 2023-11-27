@@ -1,7 +1,5 @@
 package configuration;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,45 +13,58 @@ import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
-public class BrowserConfig {
-
-    private static Browser activeBrowser;
+public class AppConfig {
     private WebDriver driver;
-    private int browserImplicitTimeOut = 10;
-    static YamlReader yamlReader = new YamlReader();
-    static Map<String, Object> properties = yamlReader.readYamlFile("src/test/resources/config.yaml");
-    static Logger log = LoggerFactory.getLogger(testbase.TestBase.class);
+    private static YamlReader yamlReader = new YamlReader();
+    private static Logger log = LoggerFactory.getLogger(testbase.TestBase.class);
+    private static Map<String, Object> properties = yamlReader.readYamlFile("src/test/resources/config.yaml");
 
 
-    public BrowserConfig() {
-        setActiveBrowser(properties);
-        initBrowserSettings();
+    public static AppConfig getInstance() {
+        initAppConfig();
+        return AppConfig.AppConfigSingleton.INSTANCE;
     }
 
 
+    public static void initAppConfig() {
+        setActiveEnvironment(properties);
+        setActiveBrowser(properties);
+    }
 
 
-    public static Browser setActiveBrowser(Map<String, Object> data) {
-        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
-        Map<String, Object> browsers = (Map<String, Object>) data.get("browser");
-        activeBrowser = null;
+    public static void setActiveEnvironment(Map<String, Object> data) {
 
-        for (Map.Entry<String, Object> entry : browsers.entrySet()) {
-            Map<String, Object> browserProperties = (Map<String, Object>) entry.getValue();
-            Boolean isActive = (Boolean) browserProperties.get("active");
+        Map<String, Object> environments = (Map<String, Object>) data.get("environment");
+
+        for (Map.Entry<String, Object> entry : environments.entrySet()) {
+            Map<String, Object> envProperties = (Map<String, Object>) entry.getValue();
+            Boolean isActive = (Boolean) envProperties.get("active");
             if (isActive != null && isActive) {
-                activeBrowser = mapper.convertValue(browserProperties, Browser.class);
-                System.out.println("Active Browser: " + activeBrowser.getBrowserName());
-                log.debug("Active Browser: " + activeBrowser.getBrowserName());
+                envProperties.forEach((key, value) -> {
+                    if (!key.equals("active")) {
+                        System.setProperty(key, value.toString());
+                    }
+                });
+
+                System.out.println("Active Environment: " + System.getProperty("envName"));
+                log.debug("Active Environment: " + System.getProperty("envName"));
                 break;
             }
         }
-        return activeBrowser;
+
+    }
+
+    public static void setActiveBrowser(Map<String, Object> data) {
+        String browserValue = (String) data.get("browser");
+        System.setProperty("browser", browserValue);
+        System.out.println("Active Browser: " + System.getProperty("browser"));
+        log.debug("Active Browser: " + System.getProperty("browser"));
+
     }
 
     public WebDriver getDriver() {
 
-        if (activeBrowser == null || activeBrowser.getBrowserName() == null) {
+        if (System.getProperty("browser") == null) {
             System.out.println("Active browser information is missing. Switching to default.");
 
             ChromeOptions chromeOptions = new ChromeOptions();
@@ -64,8 +75,8 @@ public class BrowserConfig {
 
         } else {
 
-            switch (activeBrowser.getBrowserName()) {
-                case "CHROME":
+            switch (System.getProperty("browser").toLowerCase()) {
+                case "chrome":
                     ChromeOptions chromeOptions = new ChromeOptions();
                     WebDriverManager.chromedriver().setup();
                     chromeOptions.addArguments("start-maximized");
@@ -73,7 +84,7 @@ public class BrowserConfig {
                     driver.get(System.getProperty("appUrl"));
                     break;
 
-                case "EDGE":
+                case "edge":
                     EdgeOptions edgeOptions = new EdgeOptions();
                     WebDriverManager.edgedriver().setup();
                     edgeOptions.addArguments("start-maximized");
@@ -81,7 +92,7 @@ public class BrowserConfig {
                     driver.get(System.getProperty("appUrl"));
                     break;
 
-                case "FIREFOX":
+                case "firefox":
                     FirefoxOptions firefoxOptions = new FirefoxOptions();
                     WebDriverManager.firefoxdriver().setup();
                     firefoxOptions.addArguments("start-maximized");
@@ -92,9 +103,13 @@ public class BrowserConfig {
         return this.driver;
     }
 
+    private static class AppConfigSingleton {
+        private static final AppConfig INSTANCE = new AppConfig();
 
-    private void initBrowserSettings() {
-        this.browserImplicitTimeOut = System.getProperty("browserImplicitTimeOut") != null ? Integer.parseInt(System.getProperty("browserImplicitTimeOut")) : this.browserImplicitTimeOut;
     }
 
+
 }
+
+
+
