@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="Refactor POM">
-      <change afterPath="$PROJECT_DIR$/src/test/java/configuration/AppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1a8ec715-b07f-4a94-bbc4-39f4c13a6179" name="Changes" comment="Create Code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/Browser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/BrowserConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/configuration/Environment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/configuration/EnvironmentConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/mmichalska/IdeaProjects/SUP_7.2_YamlFramework - Correction"
+    "last_opened_file_path": "C:/Users/mmichalska/IdeaProjects/SUP_Selenium_7.2_PracticeFramework - Properties"
   }
 }]]></component>
   <component name="RunManager">
@@ -130,7 +121,15 @@
       <option name="project" value="LOCAL" />
       <updated>1700737439228</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create Code">
+      <option name="closed" value="true" />
+      <created>1701078858141</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1701078858141</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,22 +139,7 @@
     <MESSAGE value="Change order of methods" />
     <MESSAGE value="Refactor YamlReader" />
     <MESSAGE value="Refactor POM" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor POM" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/configuration/AppConfig.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/configuration/AppConfig.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Create Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create Code" />
   </component>
 </project>
